@@ -36,11 +36,11 @@ spec:
                 configMapKeyRef:
                   name: env-config
                   key: JWT_SECRET
-            - name: POSTGRES_DB
+            - name: POSTGRES_DATABASE
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: POSTGRES_DB
+                  key: POSTGRES_DATABASE
             - name: POSTGRES_HOST
               valueFrom:
                 configMapKeyRef:
